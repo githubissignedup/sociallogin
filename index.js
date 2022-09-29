@@ -12,8 +12,8 @@ app.post("/signup", async (req, resp) => {
 resp.send(result);
 })
  
-const port = process.env.port || 3000;
+app.listen(5000);
+const port = process.env.port || 3001;
 app.listen(port, () => {
   console.log("Sever console log.")
 });
-
